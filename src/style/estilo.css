@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*Corpo*/
+body{
+    background-image: url(../images/backgrounALL.png);
+    background-size: 100%;
+}
+/*Textos e Titulos*/
+h1{
+    color:  white;
+    font-family: "Emblema One", system-ui;
+    font-size: 24px;
+    text-shadow: 2px 2px 20px black;
+    text-align: center;
+}
+h2{
+    color: #000000;
+    font-family: "Emblema One", system-ui;
+    font-size: 18px;
+    text-align: justify;
+}
+h2#frase2{
+    text-shadow: 1px 1px 8px white;
+}
+p{
+    color: #000000;
+    font-family: "Emblema One", system-ui;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Formatação do menu*/
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
+nav#menu li:hover{
+    border: solid white;
+}
+/*Formatação de link*/
+a:link{
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 24px;
+    color: white;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/*Formatacao das div ao longo do site*/
+
+/*Toda div tem essa formatacao*/
+div.secoes{
+    margin: 10px;
+    padding: 10px;
+    place-items: center;
+    justify-content: center;
+}
+
+/*Cabeçalho do site*/
+div#topo{
+    display: flex;
+    box-shadow: 1px 1px 4px black;
+    background-image: url(../images/background.jpg);
+    padding: 30px;
+    border-radius: 10px;
+}
+div#titulo{
+    width: 50%;
+    text-align: center;
+}
+div#menu{
+    width: 50%;
+    display: grid; 
+    place-items: center;
+}
+
+/*Primeira div com as info inciais e uma foto*/
+div#home{
+    display: flex;
+    width: 800px;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+}
+div#text-home{
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+}
+div#foto-home{
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+}
+div#foto-home img{
+    width: 480px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+}
+
+/*Segunda div com as fotos e legendas*/
+div.galeria{
+    display: flex;
+}
+div.fotos {
+    width: 50%;
+    place-items: center;
+}
+div.fotos img{
+    width: 360px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+}
+
+/*Terceira div com Google map e contatos*/
+div#contato{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    background-color: #dddddd;
+    width: 800px;
+    margin: auto;
+}
+div.redes{
+    display: flex;
+    text-align: center;
+}
+div.redes img{
+    width: 150px;
+    border-radius: 10%;
+}
+iframe#map{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    width: 500px;
+    height: 450px;
+}
+
+/*Quarta div com detalhes sobre a empresa*/
+
+/*Rodapé da pagina*/
+div#rodape{
+    display: flex;
+    box-shadow: 1px 1px 4px black;
+    background-image: url(../images/background.jpg);
+    padding: 30px;
+    border-radius: 10px;
+}
+div#rodape p{
+    color: white;
+    font-size: 30px;
+}
+
