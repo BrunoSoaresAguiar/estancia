@@ -21,12 +21,13 @@ h2{
 }
 h2#frase2{
     text-shadow: 1px 1px 8px white;
+    text-align: center;
 }
 p{
     color: #000000;
     font-family: "Emblema One", system-ui;
     font-size: 14px;
-    text-align: center;
+    text-align: justify;
 }
 
 /*Formatação do menu*/
@@ -134,7 +135,7 @@ div.redes{
     text-align: center;
 }
 div.redes img{
-    width: 150px;
+    width: 50px;
     border-radius: 10%;
 }
 iframe#map{
@@ -145,17 +146,30 @@ iframe#map{
 }
 
 /*Quarta div com detalhes sobre a empresa*/
-
-/*Rodapé da pagina*/
-div#rodape{
+div#sobre-nos{
     display: flex;
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+div#sobre-nos div{
+    margin: 10px;
+    padding: 10px;
+}
+/*Rodapé da pagina*/
+footer{
     box-shadow: 1px 1px 4px black;
     background-image: url(../images/background.jpg);
-    padding: 30px;
     border-radius: 10px;
 }
-div#rodape p{
-    color: white;
-    font-size: 30px;
+
+div#footer{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+div#footer a{
+    margin: 10px;
+    padding: 10px;
 }
 
