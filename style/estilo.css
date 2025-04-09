@@ -1,29 +1,33 @@
 @charset "UTF-8";
 
 /*Corpo*/
-body{
+body {
     background-image: url(../images/backgrounALL.png);
     background-size: 100%;
 }
+
 /*Textos e Titulos*/
-h1{
-    color:  white;
+h1 {
+    color: white;
     font-family: "Emblema One", system-ui;
     font-size: 24px;
     text-shadow: 2px 2px 20px black;
     text-align: center;
 }
-h2{
+
+h2 {
     color: #000000;
     font-family: "Emblema One", system-ui;
     font-size: 18px;
     text-align: justify;
 }
-h2#frase2{
+
+h2#frase2 {
     text-shadow: 1px 1px 8px white;
     text-align: center;
 }
-p{
+
+p {
     color: #000000;
     font-family: "Emblema One", system-ui;
     font-size: 14px;
@@ -31,27 +35,31 @@ p{
 }
 
 /*Formatação do menu*/
-nav#menu ul{
+nav#menu ul {
     list-style: none;
     text-transform: uppercase;
 }
-nav#menu li{
+
+nav#menu li {
     display: inline-block;
     padding: 10px;
     margin: 2px;
     border-radius: 5px;
 }
-nav#menu li:hover{
+
+nav#menu li:hover {
     border: solid white;
 }
+
 /*Formatação de link*/
-a:link{
+a:link {
     text-decoration: none;
     font-family: fantasy;
     font-size: 24px;
     color: white;
 }
-a:visited{
+
+a:visited {
     color: white;
     text-decoration: none;
 }
@@ -59,7 +67,7 @@ a:visited{
 /*Formatacao das div ao longo do site*/
 
 /*Toda div tem essa formatacao*/
-div.secoes{
+div.secoes {
     margin: 10px;
     padding: 10px;
     place-items: center;
@@ -67,134 +75,104 @@ div.secoes{
 }
 
 /*Cabeçalho do site*/
-div#topo{
+div#topo {
     display: flex;
     box-shadow: 1px 1px 4px black;
     background-image: url(../images/background.jpg);
     padding: 30px;
     border-radius: 10px;
 }
-div#titulo{
+
+div#titulo {
     width: 50%;
     text-align: center;
 }
-div#menu{
+
+div#menu {
     width: 50%;
-    display: grid; 
+    display: grid;
     place-items: center;
 }
 
 /*Primeira div com as info inciais e uma foto*/
-div#home{
+div#home {
     display: flex;
-    width: 800px;
+    width: 900px;
     margin: auto;
     place-items: center;
     justify-content: center;
 }
-div#text-home{
+
+div#text-home {
     width: 50%;
-    margin: 20px;
     padding: 5px;
 }
-div#foto-home{
+
+div#foto-home {
     width: 50%;
-    margin: 20px;
-    padding: 5px;
+    margin: 10px;
+    padding-bottom: 50px;
 }
-div#foto-home img{
+
+div#foto-home img {
     width: 480px;
     box-shadow: 1px 1px 8px black;
     border-radius: 5px;
 }
 
+
 /*Segunda div com as fotos e legendas*/
-div.galeria{
-    width: 850px;
+div#galeria {
+    width: 900px;
     margin: auto;
-    place-items: center;
-    justify-content: center;
+    padding-bottom: 100px;
 }
 
-ul#galeria{
-    width: 800px;
-    margin: auto;
-    padding: 50px;
-    overflow: hidden;
-    list-style: none;
-}
-ul#galeria li{
-    float: left;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border: 5px solid #ffffff;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-    /*Faz o eefeito de transição*/
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-ul#galeria li:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-ul#galeria li#foto01galeria{
-    background: url(../images/imagem1galeria.jpg) no-repeat;
-    background-position:50% 50%;
-}
-ul#galeria li#foto01galeria:hover{
-    background-position: 0px 0px;
-    background-size: 500px 500px;
-}
-/**/
-ul#galeria li#foto02galeria{
-    background: url(../images/imagem2galeria.jpg) no-repeat;
-    background-position:50% 50%;
-}
-ul#galeria li#foto03galeria{
-    background: url(../images/imagem3galeria.jpg) no-repeat;
-    background-position:50% 50%;
-}
-ul#galeria li#foto04galeria{
-    background: url(../images/imagem4galeria.jpg) no-repeat;
-    background-position:50% 50%;
-}
-
-
-
-/* MODELO ANTIGO DA GALERIA
-div.galeria{
+div#galeria ul{
     display: flex;
-}
-
-div.fotos {
-    width: 50%;
+    list-style: none;
+    justify-content: center;
     place-items: center;
 }
-div.fotos img{
-    width: 360px;
-    box-shadow: 1px 1px 8px black;
-    border-radius: 5px;
+div#galeria ul li {
+    width: 100%;
 }
-*/
+
+div#galeria ul li img {
+    width: 180px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+    margin: auto;
+}
+
+div#galeria ul li img:hover {
+    width: 480px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+
 /*Terceira div com Google map e contatos*/
-div#contato{
+div#contato {
     box-shadow: 1px 1px 8px black;
     border-radius: 5px;
     background-color: #dddddd;
     width: 800px;
     margin: auto;
 }
-div.redes{
+
+div.redes {
     display: flex;
     text-align: center;
 }
-div.redes img{
+
+div.redes img {
     width: 50px;
     border-radius: 10%;
 }
-iframe#map{
+
+iframe#map {
     box-shadow: 1px 1px 8px black;
     border-radius: 5px;
     width: 500px;
@@ -202,30 +180,32 @@ iframe#map{
 }
 
 /*Quarta div com detalhes sobre a empresa*/
-div#sobre-nos{
+div#sobre-nos {
     display: flex;
     width: 800px;
     margin: auto;
     text-align: justify;
 }
-div#sobre-nos div{
+
+div#sobre-nos div {
     margin: 10px;
     padding: 10px;
 }
+
 /*Rodapé da pagina*/
-footer{
+footer {
     box-shadow: 1px 1px 4px black;
     background-image: url(../images/background.jpg);
     border-radius: 10px;
 }
 
-div#footer{
+div#footer {
     display: flex;
     place-items: center;
     justify-content: center;
 }
-div#footer a{
+
+div#footer a {
     margin: 10px;
     padding: 10px;
 }
-
